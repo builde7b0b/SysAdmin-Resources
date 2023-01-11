@@ -1,0 +1,104 @@
+
+
+
+
+
+SSH (Secure Shell) 
+	- 'Cryptographic Network Protocol for Secure Data communication, Remote-Command Line Login, Remote Command Execution.'
+	- 'Designed as replacement for Telnet.'
+
+
+
+INSTALL SSH-SERVER
+	
+	$# apt-get install openssh-server
+
+	$# service ssh status
+	$# service ssh start
+
+
+MOVE DEFAULT SSH KEYS TO NEW FOLDER TO AVOID MITM:
+	
+	$# cd /etc/ssh/
+	$# mkdir default_kali_keys
+	$# mv ssh_host_* default_kali_keys/
+
+
+IF ERROR
+	
+	$# vi /root/.ssh/known_hosts
+
+
+REGENERATE KEYS
+	
+	$# dpkg-reconfigure openssh-server
+
+VERIFY SSH KEY HASHES ARE DIFFERENT
+	
+	$# /etc/ssh# md5sum ssh_host_*
+	$# /etc/ssh/default_kali_keys# md5sum *
+"COMPARE"
+
+
+RESTART SSH
+	
+	$# service ssh restart
+
+SET MOTD(message of the day)
+	
+	$# vi /etc/motd
+	$# service ssh restart
+
+CHANGE SSH SERVER PORT FOR SAFETY
+	
+	BACKUP
+	$# cp /etc/ssh/sshd_config /etc/ssh/ssh_config_backup
+
+EDIT CONFIG FILE
+	
+	$# vi /etc/ssh/sshd_config
+		"""Change #Port 22 to Port (12111)"""
+
+RESTART SSH
+	
+	$# service ssh restart
+
+USE SSH WITH PORT NUMBER
+	
+	$# ssh username@host -p 12111
+
+
+
+
+
+'SSH SYNTAX:
+	$ ssh user@hostname
+
+
+
+
+
+
+'SSH SUDO:
+	# control multiple pc's with ssh
+
+	'INSTALL SSH SUDO:
+		# download, place in directory
+		# make exe
+		# run
+
+	'SYNTAX:
+		$ sshsudo -r -v [-u user] AccountList Command [arguments]
+	
+		-r = modifier: copies script to target pc so it runs quicker.
+		-v = verbose
+		-u = sets default user.
+	
+		AccountList = accounts formatted. (user1@computer1,user2@computer2)
+		# if user after -u, format = (computer1,computer2)
+		# could be path to file with user and account.
+	
+		Arguments = actual command to run
+
+	$ sshsudo -u admin 1.1.1.1,2.2.2.2,3.3.3.3 say Im in your computer
+
