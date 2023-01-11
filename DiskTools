@@ -1,0 +1,427 @@
+
+
+
+##### DISK TOOLS FOR SYSTEM ADMINISTRATION #####
+http://www.gfi.com/blog/top-20-free-disk-tools-for-sysadmins/
+
+
+
+
+# INTRODUCTION #
+#################
+
+	# Best Free Tools for: 
+		1. - partitioning
+		2. - cloning
+		3. - diagnostics 
+		4. - repair 
+		5. - recovery
+	
+		1. - encryption
+		2. - wiping or drive information 
+
+
+
+# CATEGORIES - LIST #
+	1 - TestDisk
+	2 - EaseUS Partition Master Free
+	3 - WinDirStat
+	4 - CloneZilla
+	5 - OSFMount
+	
+	1 - Defraggler
+	2 - SSDLife
+	3 - Dariks Boot and Nuke DBAN
+	4 - HD Tune
+	5 - VeraCrypt
+	
+	1 - CrystalDiskInfo
+	2 - Recuva
+	3 - TreeSize
+	4 - HDDScan
+	5 - Disk2vhd
+	
+	1 - NTFSWalker
+	2 - GParted
+	3 - SpeedFan
+	4 - MyDefrag
+	5 - DiskCryptor
+
+
+
+
+
+
+
+1. TestDisk
+##############
+
+	TestDisk allows you to :
+		1. - repair boot sectors
+		2. - recover deleted partitions
+		3. - fix damaged partition tables
+		4. - recover deleted data
+		5. - copy files from deleted/inaccessible partitions 
+
+	It works on a number of different file systems including FAT/NTFS/exFAT/ext2.
+
+
+	# Note: 
+		- Bundled with TestDisk is a companion application called PhotoRec. 
+	
+		- PhotoRec recovers photos, videos and documents from different storage media by going beyond the file system and looking for specific data blocks (i.e. clusters) belonging to the missing file(s).
+
+
+
+	When you first run TestDisk you are asked to choose whether you want a log file to be created. 
+
+	You are then given a list of partition table types to choose from (this will allow the application to use the correct signature when reading the partitions on all available disks), before being presented with a list of available hard drive partitions to perform a selected action on. 
+
+	# The choice of actions you can perform on each partition include:
+
+		(1)    analysing the partition for the correct structure (and repairing it accordingly if a problem is found)
+
+		(2)    changing the disk geometry
+
+		(3)    deleting all data in the partition table
+
+		(4)    recovering the boot sector
+
+		(5)    listing and copying files
+
+		(6)    recovering deleted files
+
+		(7)    creating an image of the partition
+
+
+
+
+2. EaseUS Partition Master Free
+################################
+	
+	- EaseUS Partition Master Free is a partition manager that allows you to 
+		resize, move, merge or split paritions,
+		 convert disks, 
+		 recover deleted or lost partitions, 
+		 check the partition for errors, 
+		 migrate the OS to another HDD/SSD, 
+		 perform disk defragmentation, and more.
+
+
+	- When you launch EaseUS Partition Master Free, use the operations listed on the left hand pane or the top menu to perform an action against the selected partition(s).
+
+
+3. WinDirStat
+###############
+	
+	- WinDirStat is a disk usage and clean-up utility that allows you to visualize how data is distributed across a disk and what types of data or which locations are hogging up most space.
+
+	- Once you’ve loaded WinDirStat and chosen which drives you’d like to analyse, you are presented with a tree view of the files and folders contained on each drive as well as a graphical representation showing which files are taking up most space. 
+
+	- Clicking on a box within the graphic will display the file in question within the tree view on the left hand pane of the window.
+
+
+
+4. CloneZilla
+################
+
+	- CloneZilla is a disk imaging and cloning tool that is also packaged with Parted Magic but originally available as a standalone tool in two versions; 
+	
+	- CloneZilla Live and CloneZilla SE (Server Edition). 
+
+	- CloneZilla Live is a bootable Linux distribution that allows you to clone individual machines and CloneZilla SE is a package that you install and configure on a Linux distribution that allows you to push images to multiple clients simultaneously over the network.
+
+
+
+5. OSFMount
+############
+
+	- Using this utility you can mount image files as drive letters and then browse the data directly. 
+
+	- OSFMount supports image files such as DD, ISO, BIN, as well as VMWare Images (*.VMDK) and Nero Burning ROM Images (*.NRG). 
+
+	- A neat additional feature of OSFMount is its ability to create RAM disks, useful if you want additional security 
+		(since everything within RAM will be flushed when the machine is shutdown) 
+		
+		or need to store data that requires fast access times 
+			(such as browser cache, database files, etc.).
+
+	- After you run OSFMount, go to File > Mount new virtual disk… to get started.
+
+	- Remember to leave “Read-only drive” checked, otherwise you risk overwriting data within the image you’ve just mounted.
+
+
+
+
+6. Defraggler
+##############
+	
+	- Defraggler is a lightweight yet powerful defragmentation tool that allows you to defrag whole drives or selected files/folders. 
+
+	- It has an intuitive interface that helps you to quickly visualize how much of the drive is fragmented and which files are causing most fragmentation.
+
+	- Once you’ve performed an Analysis of the drive, you can use the Drive map to see which files are fragmented. 
+
+	- Hover your mouse over a particular square on the map and click on it to display the files associated with that particular colour (e.g. fragmented, not fragmented, etc.).
+
+
+
+
+7. SSDLife
+############
+
+	- SSDLife displays information about your SSD drive, its health status and estimated lifetime – all useful for helping you to plan ahead and take action accordingly.
+
+	- SSDLife automatically detects the model of your SSD drive and displays information about it instantly upon loading the application.
+
+	- Tip: Each SSD manufacturer should have their own SSD drive management software which gives information similar to SSDLife Free. 
+
+	- For example, the “Intel SSD Toolbox” can be used with the SSD shown in the screenshot above to display health status, detailed device information, and estimated life remaining.
+
+
+
+
+8. Darik’s Boot And Nuke (DBAN)
+###################################
+	
+	- DBAN is a bootable application that forensically wipes hard drives to prevent identity theft. 
+	
+	- This tool is useful when you are recycling or decommissioning a server/workstation.
+
+	- The two main options in DBAN are Interactive mode and Automatic mode. 
+	
+	- Interactive mode allows you to select which drives to wipe and which options to use when wiping them. 
+	
+	- Automatic mode will automatically wipe all discovered drives – no questions asked!
+
+
+
+9. HD Tune
+############
+	
+	- HD Tune can measure the read/write performance of your HDD/SSD, scan for errors, check the health status and display drive information.
+
+	- Once you start the application, select the drive from the drop down list and navigate to the appropriate tab to view the information you need or start a scan accordingly.
+
+
+
+10. VeraCrypt
+#################
+	- VeraCrypt is an open-source encryption application that can encrypt entire drives/partitions. 
+	
+	- It can also create an encrypted volume that appears as a normal file but is only accessible when mounted via VeraCrypt using the provided password. 
+	
+	- VeraCrypt is built upon the now defunct TrueCrypt but fixes many of the vulnerabilities and security concerns that plagued TrueCrypt.
+
+	- When you launch VeraCrypt, start by selecting a drive letter and clicking the “Create Volume” button. 
+	
+	- This will launch the Volume Creation Wizard which walks you through the process of encrypting a partition or creating an encrypted container file.
+
+
+
+
+11. CrystalDiskInfo
+##########################
+	
+	- CrystalDiskInfo is a hard drive health monitoring tool that displays drive information, disk temperature and monitors S.M.A.R.T attributes. 
+	
+	- CrystalDiskInfo can be configured to trigger an alert (i.e. write to the event log, send an e-mail or make a sound) when a certain threshold is reached, so it can be left to actively monitor the HDD and notify you automatically.
+
+
+	- The bar at the top displays all active hard drives. 
+	
+	- Clicking on each one will display the information for that drive. 
+	
+	- The Health Status and Temperature icons change colour depending on their value.
+
+
+
+
+
+
+2. Recuva
+###########
+	
+	In a few simple clicks, Recuva allows you to recover files from your computer that were accidentally deleted or that have become damaged or corrupt. 
+	
+	- The Quick-Start Wizard walks you through the recovery process by asking a couple of simple questions about what you want to recover and where you want to recover it from and then initiating a quick scan. 
+	
+	- You can skip the wizard and go straight to the application if you wish.
+
+	- From the Recuva interface, select the drive to scan from the drop down box on the left hand side, choose a pre-defined file type filter from the drop down box on the right hand side and then click “Scan” to get started. 
+	
+	- The filters can be edited to add or remove file types by extension. 
+	
+	- The Options button allows you to modify options such as enabling a Deep Scan (instead of a Quick Scan), changing the viewing mode, as well as increasing the secure overwriting method (how many times to overwrite a block of data).
+
+
+
+
+13. TreeSize
+################
+	An alternative to WinDirStat is a lightweight application called TreeSize. 
+	
+	TreeSize quickly scans drives or folders and displays the folder sizes in descending order (by default) to help you pinpoint which folders are taking up most space. 
+	
+	The NTFS Compression flag can be enabled directly from within the application.
+
+	Once installed, TreeSize can also be started from the context menu by right clicking on a drive or folder and selecting “TreeSize Free” which will automatically open an instance of the application and display the details for that drive or folder.
+
+	Note: When you have Defraggler, Recuva and TreeSize installed at the same time, you can initiate the Defraggler and Recuva features directly from within TreeSize for a given folder – all three applications integrate seamlessly.
+
+
+	Using the menu bar or the icons across the taskbar you can select options such as sorting by size or name, showing values in GB/MB/KB, displaying the percentage/file size/file count of the listed folders, and choosing which drives you wish to display details for.
+
+
+
+14. HDDScan
+##############
+	
+	HDDScan is a hard drive diagnostic utility used to test for disk errors, show S.M.A.R.T attributes, monitor disk temperature and perform a read/write benchmark.
+
+	When you launch HDDScan, select the drive you wish to perform an action on from the drop down box on the left. 
+
+	Once selected, click the icon in the middle to get started.
+
+
+
+15. Disk2vhd
+################
+	
+	Disk2vhd allows you to create a Virtual Hard Disk (VHD) of a live machine for use with Microsoft Virtual PC or Microsoft Hyper-V. 
+	
+	This is a great tool for simulating your live environment within a virtual environment for testing purposes or if you wish to have a virtualized backup of your live environment for redundancy purposes.
+
+	Use of this tool is simple. 
+	
+	Choose a name and location for the VHD file to be stored, select which volumes to include and click “Create”. 
+	
+	Disk2vhd also has some command line options, allowing you to script the creation of VHD files.
+
+
+
+16. NTFSWalker
+####################
+	
+	NTFSWalker allows you to perform a low-level analysis of all records (included deleted data) within the MFT table of an NTFS drive.
+	
+	 You can examine the properties of each record and extract its contents out to a file.
+
+
+	When you load NTFSWalker, you are first asked to select a disk to scan. 
+	
+	Once you select the disk and confirm which partition you wish to view, the MFT records are displayed on the left hand pane and the details are displayed on the right hand pane. 
+	
+	From the right hand pane, you can view the record properties, preview the file or review the contents in raw format (Hex Data).
+
+
+
+
+
+
+
+
+
+17. GParted
+#############
+	
+	GParted is an open-source application for managing partitions. 
+	
+	Using GParted you can manipulate partitions (i.e. create, delete, resize, move, copy) and attempt to recover data from lost partitions on a vast amount of file systems.
+
+	GParted comes as a bootable CD which loads a Linux distribution containing the GParted application. 
+	
+	When you download the ISO file you will need to burn the image onto a CD or follow the instructions to install it onto a bootable USB drive. 
+	
+	When you launch GParted, you are presented with a list of partitions to choose from. 
+	
+	Select the desired partition and choose an option to perform by right clicking on it, pressing an icon on the taskbar or navigating to an option on the menu bar.
+
+18. SpeedFan
+################
+	SpeedFan is a useful diagnostic utility that allows you to view details about the health of your machine, including hard disk temperatures and S.M.A.R.T (Self-Monitoring, Analysis and Reporting Technology) attributes.
+
+
+	When you launch SpeedFan, the main tabs you will use for hard drive information are the Readings tab and the S.M.A.R.T tab. 
+	
+	The Clocks tab can be used to compare temperature, voltage or fan speeds between two or more objects.
+
+
+
+19. MyDefrag
+#################
+	
+	MyDefrag is a disk defragmentation and optimization utility that offers fast performance with little overhead and a number of actions tailored towards different disk uses 
+		(e.g. an action specifically for defragging the system disk, an action specifically for defragging flash memory drives, or the ability to only analyse the disk). 
+	
+	MyDefrag also allows you to create or customize your own scripts and has a command line version so you can schedule the running of the application at given times.
+
+
+	When you launch MyDefrag, you are presented with a series of scripts to choose from. 
+	Each script performs a given action against the disk(s) chosen from the bottom pane. 
+	
+	Once you’ve selected a script and checked the desired disk(s), hit “Run” to initiate the action.
+
+
+
+20. DiskCryptor
+################
+	An alternative to TrueCrypt is DiskCryptor. 
+	
+	DiskCryptor is an easy-to-use open-source application that allows you to encrypt whole partitions using the TwoFish / AES / Serpent algorithms, or a combination of any of the three. 
+	
+	DiskCryptor supports FAT12, FAT16, FAT32, NTFS and exFAT file systems, allowing encryption of internal or external drives.
+
+	When you launch DiskCryptor, select a partition and click “Encrypt” to get started. 
+	
+	You will then need to select which encryption algorithm to use and will be asked to enter a password. 
+	
+	The encryption process will begin as soon as you press “OK”.
+
+
+
+
+
+
+
+# LINKS #
+##########
+
+	http://www.cgsecurity.org/wiki/TestDisk
+	http://windirstat.info/
+	http://clonezilla.org/
+	http://www.osforensics.com/tools/mount-disk-images.html
+	
+	http://www.piriform.com/defraggler
+	http://ssd-life.com/eng/download-ssdlife.html
+	http://www.dban.org/
+	http://www.dban.org/
+	http://www.hdtune.com/index.html
+	
+	http://crystalmark.info/software/CrystalDiskInfo/index-e.html
+	http://www.piriform.com/recuva
+	http://www.jam-software.com/treesize_free/screenshots.shtml
+	http://www.hddscan.com/
+	http://technet.microsoft.com/en-gb/sysinternals/ee656415
+	
+	http://dmitrybrant.com/ntfswalker
+	http://gparted.sourceforge.net/
+	http://www.almico.com/speedfan.php
+	http://www.mydefrag.com/
+	http://diskcryptor.net/wiki/Main_Page/en
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
