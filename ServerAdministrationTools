@@ -1,0 +1,289 @@
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+=====================================================================================================================================
+############## SERVER ADMINISTRATION TOOLS ############
+
+# 1. TightVNC
+
+TightVNC is a remote desktop software application and it can be used to connect to another computer and display its live remote desktop. 
+
+Like other VNC systems, it consists of two parts: the “Server”, which shares the screen of the machine it’s running on, and the “Viewer”, which shows the remote screen received from the server
+
+# TightVNC Server is designed to run in two modes:
+>> Application mode
+>> Service mode
+
+In application mode, the server, just like any other desktop software, can be running only during the current user session and quits on the logout. 
+Each user has his/her personal settings and passwords.
+
+
+# To start TightVNC Server in the application mode, choose:
+
+Start->Programs->TightVNC->TightVNC Server (Application Mode)->Run TightVNC Server.
+
+Service mode is configured independently of application mode. The settings and passwords of TightVNC Server as a service are global for all users.
+
+To Run TightVNC Server in Service Mode:
+
+* If you unchecked the recommended option “Register TightVNC Server as a system service” during installation, first, you need to register TightVNC Server as a service. Start->Programs->TightVNC->TightVNC Server (Service Mode)->Register TightVNC Service.
+
+* To start TightVNC Server as a service, click:
+Start->Programs->TightVNC->TightVNC Server (Service Mode)->Start TightVNC Service
+
+You may refer the article at http://blog.supportpro.com/2014/11/tightvnc-viewer-for-windows/ for more details on the same.
+
+
+
+
+____________________________
+## 2. NoMachine NX Client
+
+NX is a desktop virtualization system that allows you to access Linux applications that are running on a server from a remote client device such as a PC, laptop or thin client. 
+NX is similar to VNC in principle, but unlike VNC the NX server takes care of session management, and performance is usually better than VNC over a low bandwidth connection.
+
+When you have finished working you can disconnect from your remote desktop session instead of logging out, simply by closing the NX desktop window on you host computer’s desktop (e.g. your thin client or Windows PC). 
+NX will ask you if you want to “Disconnect” or “Terminate” the session.
+
+Choose “Disconnect” leave all your programs running on the server, or “Terminate” if you want to log out completely and close all running programs. 
+If you disconnect you will be able to reconnect to your desktop session later, possibly on another computer in another location, where you will find all your applications and network connections still running as you left them.
+
+NX Client is a cross-platform application, available for Windows, Mac OS X, and Linux, It has strong security by running the network traffic through an encrypted ssh network connection and the connection feels fast because compression and caching of data reduces the amount and size of X11 packets sent over the network.
+
+
+_________________
+## 3.Remmina
+
+Remmina is a remote desktop software client for Linux-based computer operating systems. 
+It supports the RDP, VNC, NX,XDMCP and SSH protocols. 
+Remmina offers support for a multitude of remote access protocols. 
+This GTK based application also has the slickest support for SSH, because it’s built very tightly, right into the application.
+
+Its a pure GTK+ 2.0 application which maintains a list of connection profiles, organized by groups and make quick connections by directly putting in the server address.Remote desktops with higher resolutions are scrollable/scalable in both window and fullscreen mode ( Viewport fullscreen mode: remote desktop automatically scrolls when the mouse moves over the screen edge.)
+
+The floating toolbar in fullscreen mode, allows you to switch between modes, toggle keyboard grabbing, minimize, etc. 
+Provides tabbed interface, optionally managed by groups and also a Tray icon, allows you to quickly access configured connection profiles. 
+A tabbed user interface is handy for keeping track of everything.
+
+It also offers a smart tray icon, which makes switching from one connection to another a simple endeavor and provides smooth controls for SSH integration. 
+Just select VNC, then tab over to SSH and setup accordingly. 
+It offers a floating toolbar when in full screen which is useful when you’re working with limited screen real estate.
+
+Remmina plugins are RDP, VNC, NX, XDMCP, SSH, Telepathy
+
+
+
+______________
+## 4. x11vnc
+
+- x11vnc is an easy way to remotely access your Linux desktop from another Windows (or Linux) computer.
+- X11vnc is a VNC server. A VNC server sends images of an X display to a client whenever the display changes. 
+- The default VNC server for Linux is Xvnc, which creates a virtual X display that is not displayed on a monitor. 
+
+- X11vnc is different from Xvnc because it works with X displays that are used with a real monitor.
+- x11vnc has security features that allows the user to set an access password or to use Unix usernames and passwords. 
+- It also has options for connection via a secure SSL link.
+
+
+
+________________
+## 5. TigerVNC
+
+- TigerVNC is a high-performance, platform-neutral implementation of VNC (Virtual Network Computing), a client/server application that allows users to launch and interact with graphical applications on remote machines. 
+- TigerVNC provides the levels of performance necessary to run 3D and video applications. 
+
+- TigerVNC also provides extensions for advanced authentication methods and TLS encryption. 
+- Stable release of TigerVNC is 1.3.1 /March 19,2014.
+
+
+
+________________
+## 6. RealVNC
+
+RealVNC is server and client application for the Virtual Network Computing (VNC) protocol to control another computer’s screen remotely. 
+For a desktop-to-desktop connection RealVNC runs on Windows, on Mac OS, and on many Unix-like operating systems. 
+Stable release of RealVNC is 5.2.1
+
+RealVNC comes in one of three editions: Open edition, Personal edition, Enterprise Edition..
+RealVNC clients using vncviewer can run in full-screen mode; 
+they use the F8 function-key as the default key for bringing up an options menu.
+
+The server component of RealVNC allows a computer to be remotely controlled by another computer. 
+The software can be installed for legitimate purposes, but it can also be installed from a remote location by an attacker with malicious intent.
+
+The limitations of Realvnc: The VNC protocol is pixel based. 
+Although this leads to great flexibility, it is often less efficient than solutions that have a better understanding of the underlying graphic layout, like X11.
+
+
+___________________
+## 7. Teamviewer
+
+TeamViewer is a software application used to connect to any computer or server around the world in just a few seconds. 
+It’s many features include remote control and desktop sharing etc..
+TeamViewer uses RSA private/public key exchange (2048-bit) and AES(56-bit) session encryption. 
+
+- In the default configuration, TeamViewer uses one of the servers of TeamViewer.com to start the connection and the routing of traffic between the local client and the remote host machine. 
+- The software then determines how to establish a connection. 
+- In 70% of the cases, after the handshake a direct connection via UDP or TCP is established.
+
+# Features for TeamViewer include the following :
+
+    - Connecting to a remote user needing assistance is as simple as entering in a set of numbers.
+    - Provide remote support using your smartphone or tablet! TeamViewer has great Android tablet and phone support.
+    - Access a remote PC with great connectivity and speed. Even works well on slower DSL connections.
+    - File sharing support. TeamViewer offers fairly decent file sharing abilities, even across different platforms.
+
+Teamviewer application can be installed in both Linux and Windows Machine. 
+To use this application for professional purpose, a licensed version of the same is also available.
+
+
+
+_______________________________________
+##### 8. Chrome Remote Desktop ####
+
+Chrome Remote Desktop is a remote desktop software tool developed by Google that allows a user to remotely control another computer using a Chromoting protocol developed by Google. 
+It transmits the keyboard and mouse events from one computer to another, relaying the graphical screen updates back in the other direction, over a network.
+
+# The main features of Chrome Remote Desktop are :
+
+    - Share or access remote PCs, through firewalls without any problems.
+    - Provides a solid, yet simple help desktop solution for smaller businesses.
+    - Uses one-time authentication codes, so any potential risk of exploitation is minimized.
+    - The extension is simple enough that a user of any skill level should be able to run it. 
+    - One installation works the same on all platforms. 
+    - If you can run Chrome, this extension will work for you.
+
+
+_____________________
+## 9. KRDC
+
+- KRDC (KDE Remote Desktop Connection) is the Remote Desktop client of the KDE Software Compilation.
+- Both Virtual Network Computing (VNC) and Remote Desktop Protocol (RDP) are supported, so Unix-like and Windows PC can be accessed using this software.
+- As part of the SoC project developers helped make Libvncservercompile on Windows, allowing for a port.
+
+- The great thing is that KRDC feels very natural to anyone who has used Vinagre previously. 
+- Can Connect to multiple PCs at once. 
+- KRDC supports this very nicely. 
+- Also remembers your previous connections. 
+- The easiest approach is to use the bookmark option for KRDC.
+
+- It provides very simple access to network browsing. 
+- If there are PCs with the right VNC port open, KRDC will see them and allow you to connect. 
+- Can use SSH, to connect to other PCs securely with a terminal and KRDC.
+
+_______________________
+## 10. VINAGRE
+
+A go-to application for running local VNC based connections tends to beVinagre. 
+It’s simple and it provides a very consistent experience on the GNOME desktop. 
+Some of the best features of using Vinagre include the following.
+
+    1.- Can connect to multiple PCs at once. If you’re bouncing between computers, this can be very helpful.
+     
+     Vinagre remembers your last connection(s) and browsing for PCs has been made easy with the network discovery options.
+    
+    2.- It is GNOME keyring compatible, no more entering your password each and every time
+    
+    3.- It also accepts reverse connections which is helpful when offering remote support on your LAN or when you’re behind a firewall. 		With SSH setup ready to go, you can also use a terminal window to run Vinagre with SSH.
+-------------------------------------------------------------------------------------------------------------------
+############################################################################################################
+- All the above tools were used to view or access a Remote Machine Graphically. 
+- There are some other tools which helps to access the servers and machine remotely through backend. 
+- These kind of tools are mostly used to access Linux Platform OS through SSH or telnet.
+
+
+# 1) TERMINAL
+- Terminals are default tools comes with all kind of Linux Distribution. 
+- These are back screen window which helps to login to the console of a linux machine through SSH.
+
+# All the Terminal tools are used to perform the following actions:
+→ Access a UNIX shell environment.
+→ Run any application that is designed to run on VT102, VT220, and xterm terminals.
+
+-All terminal application also provide the feature to use multiple terminals in a single window (tabs) and profiles support.
+-With the help of creating profiles we can customize the appearance and font of the terminals.
+
+
+# Different type of Terminals are available in different Linux OS such as :
+
+# 1. Gnome-Terminal : Gnome Terminal is a part of GNOME Project. 
+- This terminal is written in C Language. 
+- More than one tabs are possible for the gnome-terminal and we can switch from one to another with custom keyboard shortcuts.
+
+# 2. Konsole : Konsole is a terminal emulator for the K Desktop Environment.
+- It can also provide split-view mode and more over we can bookmark directory and ssh in it.
+- We can also create notification for all certain activities in terminal is an added feature of Konsole.
+
+# 3. LXTerminal : LXTerminal supports multiple tabs. 
+- All instances of program share the same process to reduce memory usage. 
+- It also has the common features of all other terminals such as Color scheme,scrolling option etc
+
+# 4. XTerm : It is the standard terminal emulator for the X Window System. 
+- xterm added a few protocols that have been adapted by other terminal emulators, such as xterm mouse tracking and the xterm 256 colors protocol later.
+
+# 5. UXTerm : UXTerm act has an wrapper around the xterm. 
+- All the arguements to UXTerms are passed directly to Xterm without processing.
+- The locale settting is very important for UXTerm for its proper working. 
+- It may produce unexpected results if the current locale is set to one in which the UTF-8 character encoding is not supported or if fonts using the ISO 10646-1 character set are not available.
+
+
+# 2) PUTTY
+
+- PuTTY is an SSH,telnet client. 
+- The main purpose of PuTTY is to use the terminal options in Windows Machine. 
+- This tool helps the user to access Linux Console from Windows Machine. PuTTY was developed originally by Simon Tatham. 
+
+- PuTTY is a open source software that is available with its source code and hence many custom version of Putty is also available such as MTPuTTY, Turbocharge PuTTY, Super PuTTY etc.
+
+- The source code can be edited by individual to create there own custom Putty Tool.
+
+
+
+# 3) BITVISE Tunnelier/WINSSHD
+
+- Bitvise Tunnelier is an SSH and SFTP client for Windows. 
+# It is robust, easy to install, easy to use, and supports all features supported by PuTTY, as well as the following:
+
+    - graphical SFTP file transfer
+    - single-click Remote Desktop tunneling
+    - auto-reconnecting capability
+    - dynamic port forwarding through an integrated proxy
+    - an FTP-to-SFTP protocol bridge
+
+(Tunnelier is free for personal use, as well as for individual commercial use inside organizations.)
+-------------------------------------------------------------------------------------------------------
+##################################################################################################
+- To access a server remotely, we can also use Mobile Technologies. 
+- Many mobile tools are available in App store for this. 
+- Following are some of the famous apk tools available for remote server administration from smartphones.
+
+
+# 1) JuiceSSH
+
+- JuiceSSH is used as a SSH client which helps to connect to Linux Servers from your android phones. 
+- It can also support IPv6. We can also open many sessions to servers from our smartphones itself. 
+- All we need is unbreakable server connection. It also had Openssh,Password private key support. 
+- We can adjust font size for the shell is an additional feature of JuiceSSH. 
+- App support UTF-8 character encoding. 
+- This application is available in Google Playstore.
+
+# 2) Connect Bot
+
+- ConnectBot is another powerful open source SSH Client. 
+- Just like JuiceSSH, it can also manage simultaneous SSH sessions, create secure tunnel etc. 
+- It uses the standard encryption used by SSH2 for the data transmission between the servers. 
+- This applications is available in App store.
+
+
+## 3) Serverauditor
+
+- Serverauditor is another SSH client apk tool. 
+- It supports both Landscape and portrait orientations. 
+- We can connect Bluetooth keyboards to the mobile and use them.
+- We can import different SSH/Private keys through SD Cards and File Managers. 
+- Just like other apps, different color schemes and font editing etc utilities are also available for Serverauditor. 
+- It can automatically identify the Linux OS to which it get access.
+
+
+
