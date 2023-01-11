@@ -1,0 +1,129 @@
+
+###############
+# CURL USAGE ##
+###############
+http://www.codediesel.com/tools/6-essential-curl-commands/
+awesome
+http://www.thegeekstuff.com/2012/04/curl-examples/
+http://www.sitepoint.com/using-curl-for-remote-requests/
+
+# ABOUT CURL
+Command line tool and a library for transferring data using URL syntax.
+
+cURL supports various protocols like, DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP.
+
+###############
+# CURL USAGE###
+#
+###############
+
+# READING URLS:
+$curl http://www.google.com
+
+$curl https://duckduckgo.com
+
+# Get webpage and store to file:
+$curl -o savedpage.html http://www.example.com
+
+# Get a HTTP BAsic Auth Page
+$Curl -u username:password http://www.example.com/
+
+# Following redirections:
+$curl -L http://www.example.com
+
+
+# Reading URLs with variable GET Params
+http://example.com/pages.php?pageNo=35
+
+$ curl -o pages#1.html http://example.com/pages.php?pageNo=[1-12]
+
+
+# Reading document information
+curl --head http://www.google.com
+
+# use on a specific resourde:
+$curl --head http://www.google.com/logo_plain.jpg
+
+# Dump document headers to file:
+$curl --dump-header headers.txt http://www.google.com
+
+CURL and FTP:
+
+
+Get a FTP directory listing
+
+$curl ftp://username:password@example.com
+To get the listing of a different directory append the directory name to the URL.
+
+$curl ftp://username:password@example.com/directory/
+Upload a file to a remote directory using FTP
+
+$curl -T uploadfilename -u username:password ftp://sitename.com/myfile
+The ‘uploadfilename’ file will be copied to the remote site and named ‘myfile’. If the destination filename is eliminated the file will be copied with the original name. By default the file will be copied to the root directory. To copy to some other directory specify the directory after the site name;e.g.
+
+$curl -T uploadfilename -u username:password 
+          ftp://sitename.com/directory/myfile
+
+
+
+5. To POST to a page.
+
+You can also process a POST request using CURL. 
+The data will use the application/x-www-form-urlencoded encoding. 
+
+- Lets say you have the following POST form in your page:
+
+<form method="POST" action="process.php">
+          <input type=text name="item">
+          <input type=text name="category">
+          <input type=submit name="submit" value="ok">
+</form>
+
+- You can use the following CURL command to POST the request.
+
+$ curl -d "item=bottle&category=consumer&submit=ok" 
+           www.example.com/process.php
+6. Referer & User Agent
+
+HTTP requests may include a ‘referer’ field, which is used to tell from which URL the client got to this particular page. 
+
+Many programs/scripts check the referer field of requests to check the source of the request. 
+
+You can simulate the referer field by the following command.
+
+$ curl -e http://some_referring_site.com  http://www.example.com/
+All HTTP requests may set the User-Agent field. 
+
+It names what user agent or client that is being used.
+ 
+Many web applications use this information to decide how to display web pages or use it to track browser usage.
+
+You can impersonate a particular browser by the following method:
+
+$ curl -A "Mozilla/5.0 (compatible; MSIE 7.01; Windows NT 5.0)" 
+        http://www.example.com
+
+
+# DOWNLOAD MULTIPLE FILES:
+$ curl -O URL1 -O URL2
+$ curl -O http://www.gnu.org/software/gettext/manual/html_node/index.html -O http://www.gnu.org/software/gettext/manual/gettext.html
+
+Please note that when we download multiple files from a same sever as shown above, curl will try to re-use the connection.
+
+
+# resume download
+$ curl -C - -O http://www.gnu.org/software/gettext/manual/gettext.html
+
+
+# Limit rate of data transfer
+$ curl --limit-rate 1000B -O http://www.gnu.org/software/gettext/manual/gettext.html
+
+
+# USING PROXY:
+$ curl -x proxysever.test.com:3128 http://google.co.in
+
+# Send mail using SMTP:
+$ curl --mail-from blah@test.com --mail-rcpt foo@test.com smtp://mailserver.com
+
+
+
